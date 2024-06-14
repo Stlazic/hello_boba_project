@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --my-brown: #211610;
+    --my-pink: #F0BAD9;
+    --hover-pink: #e897c6;
+    --offwhite: ivory;
+    --darker-offwhite:#ffffe1 ;
+    --hover-gray: #666;
+}
+
+body {
+    /* Photo by Carolin Wenske: https://www.pexels.com/photo/delicate-flower-in-close-up-25225354/ */
+
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* All */
+#root {
+    width: 70em;
+    margin: 1em auto 0 auto;
+    font-family: "Arvo", serif;
+    line-height: 1.2;
+    color: var(--my-brown);
+    
+}
+
+main {
+    margin: auto;
+    padding-bottom: 1em;
+    background-color: var(--offwhite);
+    border-radius: .5em;
+}
+
+main>section {
+    border: .0625em solid var(--my-brown);
+    border-radius: .25em;
+    margin: 1em 2em;
+}
+
+main h1 {
+    font-size: 2em;
+    padding: .5em;
+    text-decoration: double underline;
+}
+
+main h2 {
+    font-size: 1.4em;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    padding: .5em 1em;
+    font-weight: bold;
+    font-family: "Arvo", serif;
+    font-size: 1em;
+    
+    background-color: var(--my-pink);
+    border: none;
+    border-radius: .5em;
+    color: var(--my-brown);
+}
+
+button:hover {
+    background-color: var(--hover-pink);
+    cursor: pointer;
+}
+
+button.active {
+    background-color: var(--hover-pink);
+}
+/* End of All */
+
+
+/* Header/NavBar */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    align-items: center;
+    
+    background-color: var(--my-brown);
+    padding: 1.5em;
+    border-radius: .25em;
+}
+.navItems {
+    display: flex;
+    gap: 1em;
+}
+header a {
+    text-decoration: none;
+    color: var(--offwhite);
+}
+header div>a:hover {
+    color: var(--hover-gray);
+}
+header h1 {
+    font-size: 2em;
+    color: var(--my-pink);
+}
+.hamMenu{
+    display: none;
+}
+/* End of Header/NavBar */
+
+
+/* Home Page */
+.featuredMenuCard {
+    display: flex;
+    gap: 1em;
+    font-size: 1.2em;
+}
+.featuredMenuCard figure {
+    flex: 1 1 35% ;
+}
+.featuredMenuCard img {
+    border-radius: .25em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.featuredText {
+    flex: 1 1 65%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+}
+.featuredText div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-right: 5em;
+}
+.homeMessage {
+    padding: 0 1em;
+    margin: 0 1.5em;
+}
+/* End of Home Page */
+
+
+/* Menu Page */
+.menuMain>menu{
+    display: flex;
+    justify-content: center;
+    gap: .25em;
+}
+.menuOutput {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5em;
+
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+.menuItem {
+    flex: 0 1 29%;
+    border: .0625em solid var(--my-brown);
+    border-radius: .25em;
+    text-align: center;
+}
+.menuItem button {
+    width: 100%;
+    margin-top: .5em;
+    border-radius: .25em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.menuItem h3 {
+    margin-top: .5em;
+}
+.menuItem figure {
+    position: relative;
+}
+.menuItem img {
+    border-top-left-radius: .2em;
+    border-top-right-radius: .2em;
+}
+blockquote{
+    font-size: .9em;
+    background-color: var(--offwhite);
+    color: var(--my-brown);
+    border: solid .125em var(--my-brown);
+    border-radius: .25em;
+
+    box-shadow: var(--my-brown) .25em .25em .5em;
+    
+    display: none;
+
+    position: absolute;
+    top: 17.5em;
+    bottom: .5em;
+    left: .5em;
+    right: .5em;
+}
+figure:hover blockquote {
+    display: block;
+}
+/* End of Menu Page */
+
+
+/* Location Page */
+.locationItem {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    font-size: 1.2em;
+
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.locationItem>div {
+    flex: 1 1 75%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+.locationItem>figure {
+    flex: 1 1 25%;
+}
+.locationItem img {
+    border-top-right-radius: .2em;
+    border-bottom-right-radius: .2em;
+}
+/* End of Location Page */
+
+
+/*About Page */
+.aboutMain section{
+    display: flex;
+}
+.aboutMain section:nth-of-type(1), .aboutMain section:nth-of-type(3){
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.aboutMain section:nth-of-type(2){
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.aboutMain a {
+    color: var(--my-pink);
+}
+.aboutMain a:hover {
+    color: var(--hover-pink);
+}
+.aboutMain section:nth-of-type(2) {
+    background-color: var(--my-brown);
+    color: var(--offwhite);
+    border-color: var(--hover-pink);
+}
+.aboutMain section>div{
+    flex: 1 1 75%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5em;
+}
+.aboutMain section>figure{
+    flex: 1 1 25%;
+}
+/* End of About Page */
+
+
+/* Promotions Page */
+.promotionsMain div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    margin: 1em 2em;
+}
+.couponCard {
+    flex: 1 0 15%;
+    border: .0625em solid var(--my-brown);
+    border-radius: .25em;
+    padding: .5em ;
+
+    display: flex;
+    flex-direction: column;
+}
+.couponCard h4 {
+    margin-top: 1em;
+}
+.couponCard button {
+    margin-top: .5em;
+}
+.reviewCard {
+    flex: 1 1 21%;
+    border: .0625em solid var(--my-brown);
+    border-radius: .25em;
+    padding: .75em;
+}
+.reviewCard:nth-of-type(2), .reviewCard:nth-of-type(4), .reviewCard:nth-of-type(6) {
+    background-color: var(--hover-pink);
+    color: var(--my-brown);
+    border-color: var(--my-brown);
+}
+.reviewCard p {
+    margin-top: .5em;
+}
+/* End of Promotions Page */
+
+
+/* News Page */
+.newsItem {
+    display: flex;
+}
+.newsItem:hover {
+    background-color: var(--darker-offwhite);
+    cursor: pointer;
+}
+.newsItem:hover a {
+    color:var(--hover-pink) ;
+}
+.newsItem figure {
+    flex: 1 1 25%;
+}
+.newsItem>div{
+    flex: 1 1 75%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 1em;
+}
+.newsItem p{
+    margin-top: .5em;
+    color: var(--hover-gray);
+}
+.newsItem a {
+    color: var(--my-pink);
+}
+
+/* End of News Page */
+
+
+/* Footer */
+footer {
+    background-color: var(--offwhite);
+    font-size: .85em;
+    color:var(--my-brown);
+
+    padding: 1.5em;
+    border-radius: .5em;
+    margin-top: 2.42em;
+    margin-bottom: 2em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer section {
+    display: flex;
+    gap: 1em;
+}
+footer nav {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+footer>p{
+    text-align: right;
+}
+footer i {
+    font-size: 1.5em;
+    color: var(--my-brown);
+}
+footer a {
+    color: var(--hover-pink);
+}
+footer a:hover {
+    color: var(--my-pink);
+}
+/* End of Footer */
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 71em) {
+    #root {
+        width: 40em;
+    }
+
+    main {
+        width: 39.9em;
+    }
+
+    /* Nav */
+    header h1 {
+        font-size: 1.75em;
+    }
+    /* Nav */
+
+
+    /* Home Page */    
+    .featuredMenuCard figure {
+        flex: 1 1 50% ;
+    }
+    .featuredText {
+        flex: 1 1 60% ;
+        font-size: .8em;
+        text-align: right;
+        padding: 0;
+        padding-right: 1em;
+    }
+    .featuredText div:first-of-type {
+        margin-right: 0;
+    }
+    /* End of Home Page */
+
+
+    /* Menu Page */
+    blockquote{
+        padding: .25em;
+    
+        top: 4.5em;
+        bottom: .5em;
+        left: .5em;
+        right: .5em;
+    }
+    /* End of Menu Page */
+
+
+    /* Location Page */
+    .locationItem>div {
+        flex: 1 1 60%;
+    
+        justify-content: center;
+        padding: 1em;
+        font-size: .85em;
+    }
+    .locationItem>figure {
+        flex: 1 1 40%;
+    }
+    /* End of Location page */
+
+
+    /*About Page */
+    .aboutMain section>div{
+        flex: 1 1 74%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: .5em;
+        font-size: .9em;
+    }
+    .aboutMain section>figure{
+        flex: 1 1 26%;
+    }
+    /* End of About Page */
+
+
+    /* Promotions page */
+    .couponCard {
+        flex: 1 0 30%;
+    }
+    .reviewCard {
+        flex: 1 1 28%;
+    }
+    /* End of Promotions page */
+
+
+    /* News Page */
+    .newsItem {
+        font-size: .9em;
+    }
+    .newsItem figure {
+        flex: 1 1 40%;
+    }
+    .newsItem>div{
+        flex: 1 1 60%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        padding: 1em;
+    }
+    /* End of News Page */
+
+
+    /* Footer */
+    footer section {
+        gap: .6em;
+    }
+    footer nav {
+        display: block;
+    }    
+    footer p:last-of-type {
+        flex: 0 1 33%;
+    }
+    /* End of Footer */
+
+}
+
+
+@media screen and (max-width: 41em) {
+    #root {
+        width: 20em;
+    }
+
+    main {
+        width: 19.9em;
+    }
+
+    /* Navbar */
+    header {
+        align-items: start;
+        margin-bottom: 1em;
+    }
+    .hamMenu {
+        display: block;
+        cursor: pointer;
+        color: var(--offwhite);
+        margin-top: .1em;
+        font-size: 1.3em;
+    }
+    .hamMenu:hover {
+        color: var(--hover-gray);
+    }
+    /* This is so scuffed */
+    .navItems {
+        position: relative;
+        left: 11.8%;
+
+        flex-direction: column;
+        margin-top: 2em;
+        align-items: end;
+        gap: .25em;
+    }
+    .navItems a{
+        padding: .2em;
+        border-bottom: .0125em solid ivory;
+    }
+    .navItems a:hover{
+        border-bottom: .0125em solid #666666;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }   
+    .menuOff {
+        display: none;
+    }
+    .menuOn{
+        display: flex;
+    }
+    /* End of nav bar */
+
+
+    /* home page */
+    .featuredMenuCard {
+        flex-direction: column;
+        gap: 0;
+        margin: 0 .75em;
+    }
+    .featuredMenuCard figure {
+        flex: 1 1 50% ;
+    }
+    .featuredText {
+        flex: 1 1 50% ;
+        padding: .5em;
+        font-size: .8em;
+        text-align: center;
+    }
+    .homeMessage {
+        padding: 1em 0;
+        margin: 0 1em;
+    }
+    /* end of home page */
+
+
+    /* Menu Page */
+    .menuMain menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .25em;
+        margin: 0 .5em;
+    }
+    .menuMain menu>button {
+        flex: 0 1 39.5%;
+    }
+    .menuItem {
+        flex: 0 1 75%;
+    }
+    blockquote{
+        top: 9.5em;
+        bottom: .5em;
+        left: .5em;
+        right: .5em;
+    }
+    /* End of Menu Page */
+
+
+    /* Location Page */
+    .locationItem {
+        flex-wrap: wrap;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+        border-left: .0625em solid var(--my-brown);
+        border-radius: .25em;
+    }
+    .locationItem>div {
+        flex: 1 1 100%;
+
+        justify-content: center;
+        padding: 1em;
+        order: 2;
+    }
+    .locationItem>figure {
+        flex: 1 1 100%;
+        order: 1;
+    }
+    /* End of Location page */
+
+
+    /*About Page */
+    .aboutMain section {
+        flex-wrap: wrap;
+    }
+    .aboutMain section>div{
+        padding: .75em;
+        order: 1;
+    }
+    .aboutMain section>figure{
+        order: 0;
+    }
+    .aboutMain section:nth-of-type(1), .aboutMain section:nth-of-type(3){
+        border-left: .0625em solid var(--my-brown);
+        border-radius: .25em;
+    }
+    .aboutMain section:nth-of-type(2){
+        border-right: .0625em solid var(--hover-pink);
+        border-radius: .25em;
+    }
+    
+    /* End of About Page */
+
+
+    /* Promotions page */
+    .couponCard {
+        flex: 1 1 100%;
+    }
+    .reviewCard {
+        flex: 1 1 100%;
+    }
+    /* End of Promotions page */
+
+
+    /* News Page */
+    .newsItem {
+        flex-wrap: wrap;
+    }
+    .newsItem figure {
+        flex: 1 1 100%;
+    }
+    .newsItem>div{
+        flex: 1 1 100%;    
+        gap: .5em;
+    }
+    /* End of News Page */
+
+
+    /* Footer Section */
+    footer {
+        padding: 1em;
+        margin: 1em auto 3em auto;
+    }
+    footer nav {
+        flex: 0 1 30%;
+        align-items: start;
+        gap: .3em;
+    }
+    footer section {
+        flex-wrap: wrap;
+        flex: 0 1 20%;
+    }
+    footer p:last-of-type {
+        flex: 0 1 38%;
+    }
+    /* End of footer section */
+}
