@@ -8,29 +8,29 @@ export default function NavBar() {
 
     return (
         <header>
-            <NavLink to='/hello_boba_project/'>
+            <NavLink to='/hello_boba/'>
                 <h1>Hello Boba</h1> 
             </NavLink>
 
             <div className={`navItems ${openMenu ? "menuOn" : "menuOff"}`}>
                 
-                <NavLink to='/hello_boba_project/menu'>
+                <NavLink to='/hello_boba/menu'>
                     Menu
                 </NavLink>
 
-                <NavLink to='/hello_boba_project/locations'>
+                <NavLink to='/hello_boba/locations'>
                     Locations
                 </NavLink>
 
-                <NavLink to='/hello_boba_project/about'>
+                <NavLink to='/hello_boba/about'>
                     About
                 </NavLink>
 
-                <NavLink to='/hello_boba_project/promotions'>
+                <NavLink to='/hello_boba/promotions'>
                     Promotions
                 </NavLink>
 
-                <NavLink to='/hello_boba_project/news'>
+                <NavLink to='/hello_boba/news'>
                     News
                 </NavLink>
             </div>
