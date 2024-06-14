@@ -35,7 +35,7 @@ export default function AboutPage() {
 
                     <div>
                         <h2>Hello Chicago</h2>
-                        <p>Since 2019, we have opened 3 <NavLink to="/locations">Locations</NavLink> around Chicago. Our first location was in Lincoln Park but we maintain the same quality and care for each one.
+                        <p>Since 2019, we have opened 3 <NavLink to="/hello_boba_project/locations">Locations</NavLink> around Chicago. Our first location was in Lincoln Park but we maintain the same quality and care for each one.
                         </p>
                     </div>
                 </section>

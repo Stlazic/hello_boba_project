@@ -8,12 +8,12 @@ import NewsPage from "./pages/NewsPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter ([
-  {path: '/' || '/home', element: <HomePage />},
-  {path: '/menu', element: <MenuPage />},
-  {path: '/locations', element: <LocationsPage />},
-  {path: '/about', element: <AboutPage />},
-  {path: '/promotions', element: <PromotionsPage />},
-  {path: '/news', element: <NewsPage />},
+  {path: '/hello_boba_project/', element: <HomePage />},
+  {path: '/hello_boba_project/menu', element: <MenuPage />},
+  {path: '/hello_boba_project/locations', element: <LocationsPage />},
+  {path: '/hello_boba_project/about', element: <AboutPage />},
+  {path: '/hello_boba_project/promotions', element: <PromotionsPage />},
+  {path: '/hello_boba_project/news', element: <NewsPage />},
 ])
 
 function App() {

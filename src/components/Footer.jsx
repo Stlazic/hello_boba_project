@@ -6,7 +6,7 @@ export default function Footer() {
         <footer>
             <nav>
                 <p>Looking for our Hours?</p>
-                <NavLink to="/locations">Locations</NavLink>
+                <NavLink to="/hello_boba_project/locations">Locations</NavLink>
             </nav>
 
             <section>
